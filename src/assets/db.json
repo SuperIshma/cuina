@@ -1,0 +1,122 @@
+{
+    "ingredientes": [
+        {
+            "id": 1,
+            "nombre": "patata",
+            "plural": "patatas",
+            "link": "https://es.wikipedia.org/wiki/Solanum_tuberosum",
+            "divisible": true
+        },
+        {
+            "id": 2,
+            "nombre": "huevo",
+            "plural": "huevos",
+            "link": "https://es.wikipedia.org/wiki/Huevo_(alimento)",
+            "divisible": false
+        },
+        {
+            "id": 3,
+            "nombre": "boniato",
+            "plural": "boniatos",
+            "link": "https://es.wikipedia.org/wiki/Ipomoea_batatas",
+            "divisible": false
+        },
+        {
+            "id": 4,
+            "nombre": "cebolla",
+            "plural": "cebollas",
+            "link": "https://es.wikipedia.org/wiki/Allium_cepa",
+            "divisible": false
+        },
+        {
+            "id": 5,
+            "nombre": "aceite de oliva",
+            "link": "https://es.wikipedia.org/wiki/Aceite_de_oliva",
+            "divisible": true
+        },
+        {
+            "id": 6,
+            "nombre": "sal",
+            "link": "https://es.wikipedia.org/wiki/Sal_com%C3%BAn",
+            "divisible": true
+        },
+        {
+            "id": 7,
+            "nombre": "pimienta negra",
+            "link": "https://es.wikipedia.org/wiki/Piper_nigrum",
+            "divisible": true
+        }
+    ],
+    "recetas": [
+        {
+            "id": 1,
+            "nombre": "Tortilla de patatas",
+            "comensales": 1,
+            "ingredientes": [
+                {
+                    "ingredienteId": 2,
+                    "unidad": 2,
+                    "cantidad": 2,
+                    "opcional": false
+                },
+                {
+                    "ingredienteId": 1,
+                    "unidad": 2,
+                    "cantidad": 2,
+                    "opcional": false,
+                    "sustitutos": [
+                        {
+                            "id": 3
+                        }
+                    ]
+                },
+                {
+                    "ingredienteId": 4,
+                    "unidad": 2,
+                    "cantidad": 1,
+                    "opcional": true
+                },
+                {
+                    "ingredienteId": 5,
+                    "unidad": 3,
+                    "cantidad": 1,
+                    "opcional": false
+                },
+                {
+                    "ingredienteId": 6,
+                    "unidad": 4,
+                    "cantidad": 1,
+                    "opcional": false
+                },
+                {
+                    "ingredienteId": 7,
+                    "unidad": 4,
+                    "cantidad": 1,
+                    "opcional": false
+                }
+            ]
+
+        }
+    ],
+    "unidades": [
+        {
+            "id": 1,
+            "descripcion": "kilogramo",
+            "abreviatura": "kg"
+        },
+        {
+            "id": 2,
+            "descripcion": "unidades",
+            "abreviatura": "uds"
+        },
+        {
+            "id": 3,
+            "descripcion": "chorro"
+        },
+        {
+            "id": 4,
+            "descripcion": "pizca"
+        }
+    ]
+}
+
