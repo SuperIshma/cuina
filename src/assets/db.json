@@ -19,14 +19,14 @@
             "nombre": "boniato",
             "plural": "boniatos",
             "link": "https://es.wikipedia.org/wiki/Ipomoea_batatas",
-            "divisible": false
+            "divisible": true
         },
         {
             "id": 4,
             "nombre": "cebolla",
             "plural": "cebollas",
             "link": "https://es.wikipedia.org/wiki/Allium_cepa",
-            "divisible": false
+            "divisible": true
         },
         {
             "id": 5,
@@ -66,7 +66,7 @@
                     "opcional": false,
                     "sustitutos": [
                         {
-                            "id": 3
+                            "ingredienteId": 3
                         }
                     ]
                 },

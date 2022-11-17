@@ -1,0 +1,7 @@
+<div class="container">
+    <app-muestra-datos 
+        *ngIf="listaUnidades$ | async as datos" 
+        [datos]="(datos)" 
+        [tipoDeDatos]="'unidades'">
+    </app-muestra-datos>
+</div>

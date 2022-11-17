@@ -1,1 +1,7 @@
-<p>ingredientes works!</p>
+<div class="container">
+    <app-muestra-datos 
+        *ngIf="listaIngredientes$ | async as datos" 
+        [datos]="(datos | sortbyname)" 
+        [tipoDeDatos]="'ingredientes'">
+    </app-muestra-datos>
+</div>

@@ -1,0 +1,38 @@
+<table mat-table *ngIf="show" [dataSource]="datos" class="mat-elevation-z8">
+        <ng-container [matColumnDef]="column" *ngFor="let column of columnas; let ind = index">
+            <div *ngIf="column !== 'borrar' && column !== 'editar'">
+                <th mat-header-cell *matHeaderCellDef> {{column | uppercase}} </th>
+                <td mat-cell *matCellDef="let articulo">
+                    <mat-icon *ngIf="colTypes[ind]==='boolean' && articulo[column]" color="">check_circle_outline</mat-icon>
+                    <mat-icon *ngIf="colTypes[ind]==='boolean' && !articulo[column]" color="warn">remove_circle_outline</mat-icon>
+                    <span *ngIf="colTypes[ind]==='string' && articulo['link']">
+                        <a href="{{articulo['link']}}" target="_blank">{{articulo[column] | titlecase}}</a>
+                    </span>
+                    <span *ngIf="colTypes[ind]==='string' && !articulo['link']">
+                        {{articulo[column] | titlecase}}
+                    </span>
+                </td>
+            </div>
+            <div class="editar" *ngIf="column === 'editar'">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let j=index;">
+                <button class="white" mat-raised-button color="theme" focusable="false" (click)="borrarElemento(j)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                </td>
+            </div>
+            <div *ngIf="column === 'borrar'">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let j=index;">
+                <button mat-raised-button color="warn" focusable="false" (click)="borrarElemento(j)">
+                    <mat-icon>delete_outline</mat-icon>
+                </button>
+                </td>
+            </div>
+        </ng-container>
+    
+        
+
+    <tr mat-header-row *matHeaderRowDef="columnas"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnas;"></tr>
+</table>

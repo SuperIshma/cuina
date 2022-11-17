@@ -1,0 +1,24 @@
+:host {
+    
+    .white {
+        background-color: rgb(51,190,255);
+    }
+    
+    a {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    button {
+        margin: 0 0.5rem;
+    }
+    
+    mat-icon {
+        padding: 0 1rem;
+    }
+
+    span {
+        padding: 0 1rem 0 0;
+    }
+}
